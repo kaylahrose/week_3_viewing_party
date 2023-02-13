@@ -8,9 +8,10 @@ class UsersController < ApplicationController
   end
 
   def create
+
+    require 'pry'; binding.pry
     user = User.create(user_params)
     user.password = params[:password]
-    # require 'pry'; binding.pry
     # user.save!
     if user.save
       redirect_to user_path(user)

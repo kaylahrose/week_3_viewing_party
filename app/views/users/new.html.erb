@@ -7,5 +7,7 @@
   <%= form.text_field :email, required: true %><br>
   <%= form.label :password, 'Password:' %>
   <%= form.password_field :password %>
+  <%= form.label :password, 'Re-enter your password:' %>
+  <%= form.password_field :password_confirmation %>
   <%= form.submit "Create New User" %>
 <% end %>
