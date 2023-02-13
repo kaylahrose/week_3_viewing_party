@@ -1,5 +1,5 @@
-class WelcomeController < ApplicationController 
-    def index 
-        @users = User.all
-    end 
-end 
+class WelcomeController < ApplicationController
+  def index
+    @users = User.all
+  end
+end

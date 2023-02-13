@@ -9,11 +9,11 @@ class UsersController < ApplicationController
 
   def create
 
-    require 'pry'; binding.pry
     user = User.create(user_params)
-    user.password = params[:password]
+    # user.password = params[:password]
     # user.save!
     if user.save
+      # require 'pry'; binding.pry
       redirect_to user_path(user)
     else
       flash[:error] = user.errors.full_messages.to_sentence

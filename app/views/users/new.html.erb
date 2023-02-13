@@ -3,11 +3,15 @@
 <%= form_with model: @user, local: true do |form| %>
   <%= form.label :name %>
   <%= form.text_field :name, required: true %><br>
+  
   <%= form.label :email %>
-  <%= form.text_field :email, required: true %><br>
+  <%= form.email_field :email, required: true %><br>
+
   <%= form.label :password, 'Password:' %>
-  <%= form.password_field :password %>
-  <%= form.label :password, 'Re-enter your password:' %>
-  <%= form.password_field :password_confirmation %>
+  <%= form.password_field :password, required: true %>
+
+  <%= form.label :password_confirmation, 'Re-enter your password:' %>
+  <%= form.password_field :password_confirmation, required: true %>
+
   <%= form.submit "Create New User" %>
 <% end %>
