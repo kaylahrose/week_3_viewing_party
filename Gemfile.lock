@@ -74,13 +74,7 @@ GEM
     docile (1.4.0)
     erubi (1.11.0)
     execjs (2.8.1)
-    faraday (2.6.0)
-      faraday-net_http (>= 2.0, < 3.1)
-      ruby2_keywords (>= 0.0.4)
-    faraday-net_http (3.0.1)
     ffi (1.15.5)
-    figaro (1.2.0)
-      thor (>= 0.14.0, < 2)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.12.0)
@@ -107,6 +101,8 @@ GEM
     msgpack (1.6.0)
     nio4r (2.5.8)
     nokogiri (1.13.9-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-darwin)
       racc (~> 1.4)
     pg (1.4.4)
     pry (0.14.1)
@@ -164,7 +160,6 @@ GEM
       rspec-mocks (~> 3.10)
       rspec-support (~> 3.10)
     rspec-support (3.11.1)
-    ruby2_keywords (0.0.5)
     ruby_dep (1.5.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
@@ -219,6 +214,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-20
+  x86_64-darwin-21
 
 DEPENDENCIES
   bcrypt (~> 3.1.7)
@@ -226,8 +222,6 @@ DEPENDENCIES
   byebug
   capybara
   coffee-rails (~> 4.2)
-  faraday
-  figaro
   jbuilder (~> 2.5)
   launchy
   listen (>= 3.0.5, < 3.2)
@@ -250,4 +244,4 @@ RUBY VERSION
    ruby 2.7.2p137
 
 BUNDLED WITH
-   2.3.13
+   2.3.22

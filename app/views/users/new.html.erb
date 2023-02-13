@@ -5,5 +5,7 @@
   <%= form.text_field :name, required: true %><br>
   <%= form.label :email %>
   <%= form.text_field :email, required: true %><br>
+  <%= form.label :password, 'Password:' %>
+  <%= form.password_field :password %>
   <%= form.submit "Create New User" %>
 <% end %>
